@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Author" content="Karl Velazquez">
+        <meta name="description" content="This site hosts information on and works by Karl Angel Velazquez">
+        <meta name="keywords" content="Karl Velazquez, karl velazquez, karl, velazquez, Karl Angel Velazquez, karl angel velazquez">
+
+        <title>Karl Velazquez</title>
+
+        <link rel="stylesheet" href="main_style.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script>
+            window.onload = function () {
+                $("#top_header").load("top_header.html");
+                $("#bottom_footer").load("bottom_footer.html");
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="page">
+            <header id="top_header"></header>
+
+            <div id="main_section_wrapper">
+                <main id="main_section">
+                    <p>content yo yo content</p>
+                </main>
+            </div>
+
+            <footer id="bottom_footer"></footer>
+        </div>
+    </body>
+</html>

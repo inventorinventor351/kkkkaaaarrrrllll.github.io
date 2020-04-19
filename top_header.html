@@ -1,0 +1,87 @@
+<style>
+    #top_banner_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #475b5a;
+    }
+
+    #top_banner {
+        max-width: 1200px;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+
+    #top_banner h1 {
+        padding: 20px 10px;
+        font: normal 60px tahoma;
+    }
+
+    .fixed_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #top_nav_wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #868b8c;
+    }
+
+    #top_nav {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        justify-content: center;
+    }
+
+    #top_nav a {
+        padding: 15px 15px;
+        text-decoration: none;
+        font: bold 20px tahoma;
+        flex: 1;
+        text-align: center;
+    }
+
+    #top_nav a:link, #top_nav a:visited {
+        color: #bb0000;
+    }
+
+    #top_nav a:hover, #top_nav a:active {
+        color: #ffa500;
+        background: rgb(0, 0, 150);
+        background: rgba(0, 0, 150, 0.1);
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        var stickyNavTop = $('#top_nav_wrapper').offset().top;
+        $('#top_header').height($('#top_header').height());
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= stickyNavTop)
+                $('#top_nav_wrapper').addClass('fixed_header');
+            else
+                $('#top_nav_wrapper').removeClass('fixed_header');  
+        });
+    });
+</script>
+
+<div id="top_banner_wrapper">
+    <div id="top_banner">
+        <h1>hey look, it's kkkaaarrrlll</h1>
+    </div>
+</div>
+
+<div id="top_nav_wrapper">
+    <nav id="top_nav">
+        <a href="">Home</a>
+        <a href="">Blog</a>
+        <a href="">Literary Works</a>
+        <a href="">Contact</a> 
+    </nav>
+</div>
