@@ -9,26 +9,48 @@ header, nav, section, article, hgroup, aside, footer {
     display: block;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #page {
-    height: 150%;
     background: #bbbbbf;
 }
 
-#main_section_wrapper {
+#main_content_wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#main_section {
+#main_content {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 50px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.article_header {
+    margin-bottom: 20px;
+}
+
+.actual_article {
+    margin-bottom: 20px;
+}
+
+.article_text {
+
+}
+
+.image_wrapper {
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
